@@ -5,7 +5,7 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.wordwrap": "on",
+  // "editor.wordwrap": "on",
   "markdownlint.config": {
     "MD041": false
   }

@@ -15,4 +15,14 @@
     @apply font-mono antialiased text-white;
     @apply overflow-hidden;
   }
+
+  /* 让头部可以拖拽 */
+  header{
+    -webkit-app-region: drag;
+  }
+
+  /* 让“红绿灯”按钮不会失效 */
+  button{
+    -webkit-app-region: no-drag;
+  }
 }

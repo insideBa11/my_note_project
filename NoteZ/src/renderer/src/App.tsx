@@ -1,9 +1,17 @@
-function App() {
-  return (
-    <div className="flex h-full items-center justify-center">
-      <span className="text-4xl text-blue-500">hello from electron</span>
-    </div>
-  )
-}
+import { Content, RootLayout, Sidebar,DraggableTopBar } from "@/components";
 
-export default App
+const App = () => {
+  return (
+    <>
+      <DraggableTopBar />
+      <RootLayout>
+        <Sidebar className="p-2">Sidebar</Sidebar>
+        <Content className="border-l bg-zinc-900/50 border-l-white/20">
+          Content
+        </Content>
+      </RootLayout>
+    </>
+  );
+};
+
+export default App;

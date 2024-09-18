@@ -1,12 +1,13 @@
 import { notesMock } from "@/store/mocks";
 import { ComponentProps } from "react";
+import { NotePreview } from "./NotePreview";
 
-export const NotePreviewList = ({...props}:ComponentProps<'ul'>) => {
+export const NotePreviewList = ({ ...props }: ComponentProps<"ul">) => {
 	return (
 		<ul {...props}>
 			{
 				notesMock.map((note) => (
-					<li className='text-[#222] dark:text-[#EFEFEF]' key={note.title}>{note.title}</li>
+					<NotePreview key={note.title + note.lastEditTime} {...note} />
 				))
 			}
 		</ul>
